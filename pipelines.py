@@ -6,8 +6,13 @@
 
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
-
+from bs4 import BeautifulSoup
 
 class InqbatorPipeline:
     def process_item(self, item, spider):
-        return item
+        # 
+        # adapter=ItemAdapter(item)
+        # field_names=adapter.field_names()
+        # for field_name in field_names:
+        #     soup=BeautifulSoup(field_name,'html.parser')
+        pass
