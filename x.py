@@ -1,5 +1,8 @@
-import pandas as pd 
+import json
+import sys
 
-df=pd.read_csv('test.csv')
+with open('test.json') as f:
+    data=json.load(f)
 
-print(df.head())
+ind = sys.argv
+print(data['data'][int(ind[1])])
